@@ -119,11 +119,11 @@ a.now:after{
 
 
 p:after {
-    content: '';
-    width: 100%;
-    height: .5em;
-    bottom: -10px; 
-    display: inline-block;
+    /* content: ''; */
+    /* width: 100%; */
+    /* height: .5em; */
+    /* bottom: -10px;  */
+    /* display: inline-block; */
   }
 
 
