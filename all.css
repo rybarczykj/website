@@ -2,13 +2,13 @@
 
 @font-face{
     src: url(fonts/WorkSans-Medium.ttf);
-    font-family: worksans
-    font-weight: 400;
+    font-family: worksans;
+    font-weight: 600;
 }
 @font-face{
     src: url(fonts/WorkSans-Regular.ttf);
     font-family: worksans;
-    font-weight: 600;
+    font-weight: 400;
 }
 @font-face{
     src: url(fonts/WorkSans-Light.ttf);
@@ -21,7 +21,7 @@
     letter-spacing: .5px;
     font-size: 45px;
     margin-top: 20px;
-    margin-bottom: 5px; 
+    margin-bottom: 3px; 
     font-weight: 600;
     float: left;
 }
@@ -38,8 +38,8 @@
 .nav a{
     font-family: 'Courier New';
     /* font-size: 16px; */
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 18px;
+    padding-right: 18px;
     padding-top: 3px;
     padding-bottom: 3px;
 
@@ -60,6 +60,7 @@ body {
     color: white;
     justify-content: center;
     font-size: 12pt;
+    font-weight: 200;
 
 
 }
@@ -100,7 +101,6 @@ a.now:after{
     background-color: rgba(0, 0, 0, .05);
 
     align-items: center;
-    /* justify-content: center; */
     /* max-width: 100px; */
     background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .8) ), url('images/skate.jpeg');
     
