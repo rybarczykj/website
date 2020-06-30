@@ -26,12 +26,11 @@ body {
 .wrapper {
     display: flex; 
     flex-direction: row;
-    flex-direction: column;
     width: 100vw;
     min-height: 100vh;
     background-color: rgba(0, 0, 0, .05);
 
-    align-items: center;
+    /* align-items: center; */
     background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .8) ), url('images/skate.jpeg');
     background-position-x: center;
     background-size: cover;
@@ -113,7 +112,7 @@ a.now:after{
     width: 50%;
     /* max-width: 550px; */
     min-width: 400px;
-    padding: 20px;
+    padding: 50px;
     font-size: 12pt;
 
     
