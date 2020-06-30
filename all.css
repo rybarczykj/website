@@ -124,7 +124,7 @@ img{
 
 .grid-entry{
     position: relative;
-    width: 20vw;
+    width: 100%;
     /* height: ; */
 }
 
