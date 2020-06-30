@@ -95,7 +95,7 @@ a.now:after{
     display: flex; 
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgba(0, 0, 0, .05);
 
     align-items: center;
@@ -104,8 +104,7 @@ a.now:after{
     background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .8) ), url('images/skate.jpeg');
     
     /* background-repeat: repeat; */
-
-
+ 
     background-position-x: center;
 
 }
@@ -142,13 +141,14 @@ img{
 
 .grid-entry{
     position: relative;
-    width: 20vw;
+    width: 100%;
     /* height: ; */
 }
 
 
 .grid-entry :not(img){
     /* text over img  */
+    color: black;
     position: absolute;
 
     bottom: 50%;
