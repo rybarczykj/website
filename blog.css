@@ -1,0 +1,120 @@
+
+
+@font-face{
+    src: url(fonts/WorkSans-Medium.ttf);
+    font-family: worksans;
+    font-weight: 600;
+}
+@font-face{
+    src: url(fonts/WorkSans-Regular.ttf);
+    font-family: worksans;
+    font-weight: 400;
+}
+@font-face{
+    src: url(fonts/WorkSans-Light.ttf);
+    font-family: worksans;
+    font-weight: 200;
+}
+
+html, body { 
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;   
+    background-color: rgba(0, 0, 0, .02); 
+}
+
+.wrapper {
+    display: flex; 
+    flex-direction: row;
+    width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    align-items: center;
+    font-family: worksans;
+    font-weight: 200;
+    color: black;
+
+}
+
+.centernav{
+    position: fixed;
+    width: 38%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+
+}
+
+.bigname { 
+    letter-spacing: .5px;
+    font-size: 45px;
+    margin-top: 10px;
+    margin-bottom: 3px; 
+    font-weight: 600;
+    /* float: left; */
+}
+.squiggly {
+    background: url(images/underline.gif) bottom repeat-x;
+    display: inline;
+}
+
+.links{
+    margin:10px;
+}
+.links a{
+    font-family: 'Courier New';
+    /* font-size: 16px; */
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+}
+
+
+a { text-decoration: none; position: relative; }
+
+a:link{ color: black; }
+a:visited { color: black; }
+a:hover { color: grey; }
+a.now {
+    font-weight: 600;
+}
+
+
+.content{
+    position: absolute;
+    left: 40%;
+    top: 0%;
+    width: 50%;
+    /* max-width: 550px; */
+    border-left: 1px solid black;
+
+    padding: 50px;
+    font-size: 12pt;
+    overflow: auto;
+}
+/* .content::before{
+    content: '';
+    background-color: red;
+    width:3px;
+    height: 90%;
+    bottom: 0;
+    left: -7px;
+
+} */
+
+img{
+    display:block; 
+    margin: 0 auto;
+    width: 40%;
+
+}
+
+
+
+
