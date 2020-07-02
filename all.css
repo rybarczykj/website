@@ -17,7 +17,6 @@
 }
 
 body { 
-    Font-family: fonts;
     padding: 0;
     margin: 0;   
      
@@ -47,13 +46,13 @@ body {
     /* position: fixed; */
     float: left;
 
+
     display: flex;
     /* flex-direction: row; */
 
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    align-self: center;
     /* top: 40%;
     left:50%; */
     /* transform: translate(-50%, -50%); */
@@ -133,14 +132,6 @@ p:after {
   }
 
 
-
-.textbox {
-    align-self: center;
-    justify-self: center;
-    margin: 100px;
-    max-width: 700px;
-    font-size: 150pt;
-}
 
 
 .grid-container{
