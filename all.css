@@ -118,7 +118,12 @@ a.now:after{
     border-left: 1px solid lime;
 }
 
+p img{
+    display:block; 
+    margin: 0 auto;
+    width: 40%;
 
+}
 p:after {
     /* content: ''; */
     /* width: 100%; */
