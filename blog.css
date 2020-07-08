@@ -31,7 +31,7 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: linear-gradient( rgba(0, 0, 0,.85), rgba(0, 0, 0, .85) ), url('images/skate.jpeg');
+    background-image: linear-gradient( rgba(10, 10, 10,.9), rgba(10, 10, 10, .9) ), url('images/skate.jpeg');
     background-size: cover;
     filter: grayscale(100%);
     z-index: -1;
@@ -81,6 +81,22 @@ body {
     display: inline;
 }
 
+a { text-decoration: none;
+    position: relative; }
+.content a:after {
+    content: '';
+
+    width: 90%;
+    position: absolute;
+    left: .5%;
+    bottom: -2%;
+    border-bottom: 1px solid;
+    }
+a:link{ color: white; }
+a:visited { color: white; }
+a:hover {color: lightgrey}
+
+
 .links{
     margin:10px;
 }
@@ -95,25 +111,22 @@ body {
 }
 
 
-a { text-decoration: underline; position: relative; }
-a:link{ color: white; }
-a:visited { color: white; }
-
-.links a:link{ color: lime; text-decoration: none;}
+.links a:link{ color: lime; }
 .links a:visited { color: lime; }
 .links a:hover { color: white; }
 .links a.now:after{
     font-weight: 600;
     content: "^";
     position: absolute;
-    /* bottom: 20%; 
-    left: 0%; */
     right: 45%;
     bottom: -70%; 
-    /* this is janky af. fix it */
 
 }
 
+p{
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
 
 
 .content{
@@ -129,15 +142,6 @@ a:visited { color: white; }
     border-left: 1px solid lime;
 
 }
-/* .content::before{
-    content: '';
-    background-color: red;
-    width:3px;
-    height: 90%;
-    bottom: 0;
-    left: -7px;
-
-} */
 
 img{
     display:block; 
@@ -147,6 +151,27 @@ img{
 
 }
 
+.breadcrumbs{
+    font-size: 9pt;
+    display: inline;
+}
+.breadcrumbs a{
+
+}
+
+
+.arrow{
+    content: "»";
+    font-size: 11pt;
+    display: inline;
+    padding-left: 2pt;
+    padding-right: 2pt;
+}
+
+.date {
+    font-family: 'Courier New';
+    display: inline;
+}
 
 
 

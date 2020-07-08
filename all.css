@@ -74,9 +74,28 @@ body {
     display: inline;
 }
 
+a { text-decoration: none;
+    position: relative; }
+.content a:after {
+    content: '';
+
+    width: 99%;
+    position: absolute;
+    left: .5%;
+    bottom: -2%;
+    border-bottom: 1px solid;
+    }
+
+a:link{ color: white; }
+a:visited { color: white; }
+a:hover {color: lightgrey}
+
+
+
 .links{
     margin:10px;
 }
+
 .links a{
     font-family: 'Courier New';
     /* font-size: 16px; */
@@ -87,25 +106,15 @@ body {
 
 }
 
-
-a { text-decoration: none; position: relative; }
-
-a:link{ color: lime; }
-a:visited { color: lime; }
-a:hover { color: white; }
-/* a:active {text-decoration:underline ;} */
-/* a.now:before {font-weight: 900;
-    content: "> ";} */
-a.now:after{
+.links a:link{ color: lime;}
+.links a:visited { color: lime; }
+.links a:hover { color: white; }
+.links a.now:after{
     font-weight: 600;
-    /* font-size: 80%; */
     content: "^";
     position: absolute;
-    /* bottom: 20%; 
-    left: 0%; */
     right: 45%;
-    bottom: -17px; 
-    /* this is janky af. fix it */
+    bottom: -70%; 
 
 }
 
@@ -137,16 +146,6 @@ p:after {
 
 
 
-.grid-container{
-    /* background-color: black; */
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;    /* grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); */
-
-}
-
 img{
     display: block;
     /* margin-left: auto; */
@@ -154,53 +153,22 @@ img{
 
 }
 
-.grid-entry{
-    position: relative;
-    width: 100%;
-    /* height: ; */
+ul{
+    list-style-type: none;
+}
+li{
+    margin: 10px 0;
+}
+.date {
+    font-family: 'Courier New';
+    display: inline;
+}
+.date:after{
+    content: "- ";
+    display: inline;
 }
 
 
-.grid-entry :not(img){
-    /* text over img  */
-    color: black;
-    position: absolute;
-
-    bottom: 50%;
-    top:50%;
-    
-    opacity: 0;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-
-}
-
-.grid-entry:hover :not(img){
-    opacity: 1;
-}
-
-.grid-entry img{
-    width: 100%;
-    height: 100%;
-    vertical-align: top;
-
-    -webkit-filter: blur(0px);
-    filter: blur(0);
-    
-    -webkit-transition: .5s;
-    transition: .5s;
-
-
-}
-
-
-.grid-entry:hover img {
-    -webkit-filter: blur(2px);
-    filter: blur(2px);
-
-    -webkit-transition: .4s;
-    transition: .4s;
-}
 
 
 
