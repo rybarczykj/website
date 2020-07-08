@@ -24,7 +24,19 @@ body {
 
 }
 
-
+.wrapper::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient( rgba(0, 0, 0,.85), rgba(0, 0, 0, .85) ), url('images/skate.jpeg');
+    background-size: cover;
+    filter: grayscale(100%);
+    z-index: -1;
+}
+    
 .wrapper {
     position: fixed;
 
@@ -39,8 +51,10 @@ body {
 
     font-family: worksans;
     font-weight: 200;
-    color: black;
-
+    color: white;
+    /* background-image: linear-gradient( rgba(0, 0, 0,.8), rgba(0, 0, 0, .8) ), url('images/skate.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat; */
 }
 
 .centernav{
@@ -50,6 +64,7 @@ body {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    width: 40%;
 
 }
 
@@ -80,18 +95,30 @@ body {
 }
 
 
-a { text-decoration: none; position: relative; }
+a { text-decoration: underline; position: relative; }
+a:link{ color: white; }
+a:visited { color: white; }
 
-a:link{ color: black; }
-a:visited { color: black; }
-a:hover { color: grey; }
-a.now {
+.links a:link{ color: lime; text-decoration: none;}
+.links a:visited { color: lime; }
+.links a:hover { color: white; }
+.links a.now:after{
     font-weight: 600;
+    content: "^";
+    position: absolute;
+    /* bottom: 20%; 
+    left: 0%; */
+    right: 45%;
+    bottom: -70%; 
+    /* this is janky af. fix it */
+
 }
 
 
+
 .content{
-    width: 50%;
+    width: 60%;
+    line-height: 1.5em;
 
     overflow-y: auto;
     max-height: 85vh;
@@ -99,7 +126,8 @@ a.now {
     padding: 50px;
     font-size: 12pt;
 
-    border-left: 1px solid black;
+    border-left: 1px solid lime;
+
 }
 /* .content::before{
     content: '';
@@ -114,8 +142,8 @@ a.now {
 img{
     display:block; 
     margin: 0 auto;
-    height: 250px;
-    padding: 30px;
+    height: 400px;
+    padding: 40px;
 
 }
 

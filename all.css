@@ -22,6 +22,7 @@ body {
      
 }
 
+
 .wrapper {
     display: flex; 
     flex-direction: row;
@@ -53,6 +54,8 @@ body {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    width: 40%;
+
     /* top: 40%;
     left:50%; */
     /* transform: translate(-50%, -50%); */
@@ -94,7 +97,7 @@ a:hover { color: white; }
 /* a.now:before {font-weight: 900;
     content: "> ";} */
 a.now:after{
-    /* font-weight: 600; */
+    font-weight: 600;
     /* font-size: 80%; */
     content: "^";
     position: absolute;
@@ -109,7 +112,7 @@ a.now:after{
 
 
 .content{
-    width: 50%;
+    width: 60%;
     /* max-width: 550px; */
 
     padding: 50px;
