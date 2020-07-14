@@ -3,7 +3,7 @@
 @font-face{
     src: url(fonts/WorkSans-Medium.ttf);
     font-family: worksans;
-    font-weight: 600;
+    font-weight: 500;
 }
 @font-face{
     src: url(fonts/WorkSans-Regular.ttf);
@@ -13,7 +13,7 @@
 @font-face{
     src: url(fonts/WorkSans-Light.ttf);
     font-family: worksans;
-    font-weight: 200;
+    font-weight: 100;
 }
 
 body { 
@@ -25,34 +25,34 @@ body {
 }
 
 /* It's after because I had trouble doing greyscale AND background */
-.wrapper::after {
+/* .wrapper::after {
     content: "";
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     position: absolute;
     background-image: linear-gradient( rgba(10, 10, 10,.9), rgba(10, 10, 10, .9) ), url('images/skate.jpeg');
     background-size: cover;
     filter: grayscale(100%);
     z-index: -1;
-}
+} */
     
 .wrapper {
-    position: fixed;
+    font-family: worksans, Arial;
+    font-weight: 100;
+    color: white;
+    background-image: linear-gradient( rgba(0, 0, 0, .85), rgba(0, 0, 0, .85) ), url('images/skate_grey.jpeg');
+    background-position-x: center;
+    background-size: cover;
+    width: 100vw;
+    min-height: 100vh;
 
     display: flex; 
     flex-direction: row;
 
-    width: 100%;
-    min-height: 100%;
-
     align-items: center;
-    justify-content: center;
 
-    font-family: worksans, Arial;
-    font-weight: 200;
-    color: white;
 
 }
 
@@ -76,7 +76,7 @@ body {
     font-size: 45px;
     margin-top: 10px;
     margin-bottom: 3px; 
-    font-weight: 600;
+    font-weight: 500;
     /* float: left; */
 }
 .squiggly {
@@ -84,9 +84,9 @@ body {
     display: inline;
 }
 
-a { text-decoration: none;
+a { 
     position: relative; }
-.content a:after {
+/* .content a:after {
     content: '';
 
     width: 100%;
@@ -94,7 +94,7 @@ a { text-decoration: none;
     left: .5%;
     bottom: -2%;
     border-bottom: 1px solid;
-    }
+    } */
 a:link{ color: white; }
 a:visited { color: white; }
 a:hover {color: lightgrey}
@@ -104,6 +104,7 @@ a:hover {color: lightgrey}
     margin:10px;
 }
 .links a{
+    text-decoration: none;
     font-family: 'Courier New';
     /* font-size: 16px; */
     padding-left: 18px;
@@ -158,9 +159,6 @@ img{
     font-size: 9pt;
     display: inline;
 }
-.breadcrumbs a{
-
-}
 
 
 .arrow{
@@ -182,6 +180,8 @@ img{
 @media only screen and (max-width:700px){
     .wrapper {
         flex-direction: column; 
+        overflow-y: auto;
+
 
     }
     .centernav{
@@ -190,6 +190,8 @@ img{
     .content{
 
         margin-top: 20px;
+        width: 80%;
+        padding-: 25px;
     }
     img{
         height: 200px;

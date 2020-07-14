@@ -173,13 +173,11 @@ li{
     }
     .centernav{
         width: 100%;
-        position: fixed;
-        top: 0;
     }
     .content{
-        position: fixed;
-        top: 20%;
         margin-top: 20px;
+        width: 80%;
+        padding: 25px;
     }
     
 
