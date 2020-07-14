@@ -24,6 +24,7 @@ body {
 
 }
 
+/* It's after because I had trouble doing greyscale AND background */
 .wrapper::after {
     content: "";
     top: 0;
@@ -49,22 +50,24 @@ body {
     align-items: center;
     justify-content: center;
 
-    font-family: worksans;
+    font-family: worksans, Arial;
     font-weight: 200;
     color: white;
-    /* background-image: linear-gradient( rgba(0, 0, 0,.8), rgba(0, 0, 0, .8) ), url('images/skate.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat; */
+
 }
 
 .centernav{
     float: left;
 
     display: flex;
+    
     flex-direction: column;
     text-align: center;
     justify-content: center;
+
     width: 40%;
+    padding: 10px;
+
 
 }
 
@@ -77,7 +80,7 @@ body {
     /* float: left; */
 }
 .squiggly {
-    background: url(images/underline.gif) bottom repeat-x;
+    /* background: url(images/underline.gif) bottom repeat-x; */
     display: inline;
 }
 
@@ -146,7 +149,7 @@ p{
 img{
     display:block; 
     margin: 0 auto;
-    height: 400px;
+    max-height: 300px;
     padding: 40px;
 
 }
@@ -172,6 +175,44 @@ img{
     font-family: 'Courier New';
     display: inline;
 }
+
+
+
+
+@media only screen and (max-width:700px){
+    .wrapper {
+        flex-direction: column; 
+
+    }
+    .centernav{
+        width: 100%;
+    }
+    .content{
+
+        margin-top: 20px;
+    }
+    img{
+        height: 200px;
+    }
+    
+
+}
+
+
+@media only screen and (min-width:700px) and (max-width:1200px){
+    .links a{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    img{
+        height: 300px;
+    }
+
+    
+
+}
+
+
 
 
 
