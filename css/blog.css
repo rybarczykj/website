@@ -1,34 +1,48 @@
 
 
 @font-face{
-    src: url(fonts/WorkSans-Medium.ttf);
+    src: url(../fonts/WorkSans-Medium.ttf);
     font-family: worksans;
     font-weight: 500;
 }
 @font-face{
-    src: url(fonts/WorkSans-Regular.ttf);
+    src: url(../fonts/WorkSans-Regular.ttf);
     font-family: worksans;
     font-weight: 400;
 }
 @font-face{
-    src: url(fonts/WorkSans-Light.ttf);
+    src: url(../fonts/WorkSans-Light.ttf);
     font-family: worksans;
     font-weight: 100;
 }
+
 body { 
     padding: 0;
     margin: 0;   
-    overscroll-behavior-y: none;
-    
-    
-     
+    overscroll-behavior: none;
+
+
 }
 
-.wrapper{
+/* It's after because I had trouble doing greyscale AND background */
+/* .wrapper::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    background-image: linear-gradient( rgba(10, 10, 10,.9), rgba(10, 10, 10, .9) ), url('../images/skate.jpeg');
+    background-size: cover;
+    filter: grayscale(100%);
+    z-index: -1;
+} */
+    
+.wrapper {
     font-family: worksans, Arial;
     font-weight: 100;
     color: white;
-    background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .8) ), url('images/skate.jpeg');
+    background-image: linear-gradient( rgba(0, 0, 0, .85), rgba(0, 0, 0, .85) ), url('../images/skate_grey.jpeg');
     background-position-x: center;
     background-size: cover;
     width: 100vw;
@@ -40,18 +54,13 @@ body {
     align-items: center;
 
 
-
-
 }
-
-
 
 .centernav{
     float: left;
 
-
     display: flex;
-
+    
     flex-direction: column;
     text-align: center;
     justify-content: center;
@@ -61,7 +70,6 @@ body {
 
 
 }
-
 
 .bigname { 
     letter-spacing: .5px;
@@ -78,27 +86,23 @@ body {
 
 a { 
     position: relative; }
-
 /* .content a:after {
     content: '';
 
-    width: 99%;
+    width: 100%;
     position: absolute;
     left: .5%;
     bottom: -2%;
     border-bottom: 1px solid;
     } */
-
 a:link{ color: white; }
 a:visited { color: white; }
 a:hover {color: lightgrey}
 
 
-
 .links{
     margin:10px;
 }
-
 .links a{
     text-decoration: none;
     font-family: 'Courier New';
@@ -110,7 +114,8 @@ a:hover {color: lightgrey}
 
 }
 
-.links a:link{ color: lime;}
+
+.links a:link{ color: lime; }
 .links a:visited { color: lime; }
 .links a:hover { color: white; }
 .links a.now:after{
@@ -122,62 +127,76 @@ a:hover {color: lightgrey}
 
 }
 
+p{
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
 
 
 .content{
     width: 60%;
-    /* max-width: 550px; */
-    padding: 50px;
-    font-size: 12pt;
     line-height: 1.5em;
 
+    overflow-y: auto;
+    max-height: 85vh;
+    
+    padding: 50px;
+    font-size: 12pt;
+
     border-left: 1px solid lime;
-}
-
-p img{
-    display:block; 
-    margin: 0 auto;
-    width: 40%;
 
 }
-
-
 
 img{
-    display: block;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
+    display:block; 
+    margin: 0 auto;
+    max-height: 300px;
+    padding: 40px;
 
 }
 
-ul{
-    list-style-type: none;
+.breadcrumbs{
+    font-size: 9pt;
+    display: inline;
 }
-li{
-    margin: 10px 0;
+
+
+.arrow{
+    content: "»";
+    font-size: 11pt;
+    display: inline;
+    padding-left: 2pt;
+    padding-right: 2pt;
 }
+
 .date {
     font-family: 'Courier New';
     display: inline;
 }
-.date:after{
-    content: "- ";
-    display: inline;
-}
+
+
 
 
 @media only screen and (max-width:700px){
     .wrapper {
         flex-direction: column; 
+        overflow: hidden;
+
 
     }
     .centernav{
         width: 100%;
     }
     .content{
+
         margin-top: 20px;
         width: 80%;
-        padding: 25px;
+        padding-top: 25px;
+        max-height: none;
+
+    }
+    img{
+        height: 200px;
     }
     .links a{
         padding-left: 10px;
@@ -193,11 +212,13 @@ li{
         padding-left: 12px;
         padding-right: 12px;
     }
+    img{
+        height: 300px;
+    }
 
     
 
 }
-
 
 
 

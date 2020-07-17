@@ -1,17 +1,17 @@
 
 
 @font-face{
-    src: url(fonts/WorkSans-Medium.ttf);
+    src: url(../fonts/WorkSans-Medium.ttf);
     font-family: worksans;
     font-weight: 500;
 }
 @font-face{
-    src: url(fonts/WorkSans-Regular.ttf);
+    src: url(../fonts/WorkSans-Regular.ttf);
     font-family: worksans;
     font-weight: 400;
 }
 @font-face{
-    src: url(fonts/WorkSans-Light.ttf);
+    src: url(../fonts/WorkSans-Light.ttf);
     font-family: worksans;
     font-weight: 100;
 }
@@ -19,39 +19,21 @@
 body { 
     padding: 0;
     margin: 0;   
-    overscroll-behavior: none;
 
 
 }
 
-/* It's after because I had trouble doing greyscale AND background */
-/* .wrapper::after {
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100%;
-    position: absolute;
-    background-image: linear-gradient( rgba(10, 10, 10,.9), rgba(10, 10, 10, .9) ), url('images/skate.jpeg');
-    background-size: cover;
-    filter: grayscale(100%);
-    z-index: -1;
-} */
     
 .wrapper {
     font-family: worksans, Arial;
-    font-weight: 100;
-    color: white;
-    background-image: linear-gradient( rgba(0, 0, 0, .85), rgba(0, 0, 0, .85) ), url('images/skate_grey.jpeg');
-    background-position-x: center;
-    background-size: cover;
-    width: 100vw;
-    min-height: 100vh;
+    font-weight: 400;
+    color: black;
 
     display: flex; 
-    flex-direction: row;
+    flex-direction: column;
 
     align-items: center;
+
 
 
 }
@@ -80,23 +62,15 @@ body {
     /* float: left; */
 }
 .squiggly {
-    /* background: url(images/underline.gif) bottom repeat-x; */
+    background: url(../images/underline.gif) bottom repeat-x;
     display: inline;
 }
 
 a { 
     position: relative; }
-/* .content a:after {
-    content: '';
 
-    width: 100%;
-    position: absolute;
-    left: .5%;
-    bottom: -2%;
-    border-bottom: 1px solid;
-    } */
-a:link{ color: white; }
-a:visited { color: white; }
+a:link{ color: blue; }
+a:visited { color: blue; }
 a:hover {color: lightgrey}
 
 
@@ -115,9 +89,9 @@ a:hover {color: lightgrey}
 }
 
 
-.links a:link{ color: lime; }
-.links a:visited { color: lime; }
-.links a:hover { color: white; }
+.links a:link{ color: black; }
+.links a:visited { color: black; }
+.links a:hover { color: lightgrey; }
 .links a.now:after{
     font-weight: 600;
     content: "^";
@@ -128,30 +102,50 @@ a:hover {color: lightgrey}
 }
 
 p{
-    letter-spacing: 1px;
     margin-bottom: 25px;
 }
 
+.article{
 
-.content{
-    width: 60%;
-    line-height: 1.5em;
+    border-bottom: 1px black;
 
-    overflow-y: auto;
-    max-height: 85vh;
-    
-    padding: 50px;
-    font-size: 12pt;
 
-    border-left: 1px solid lime;
+
 
 }
 
+.content{
+    border-left: 1px solid black;
+
+    width: 45%;
+    line-height: 1.5em;
+
+
+    
+    padding: 50px;
+    padding-top: 25px;
+    font-size: 12pt;
+
+
+
+    overflow-x: hidden;
+
+
+}
+
+.imgContainer{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 img{
-    display:block; 
-    margin: 0 auto;
-    max-height: 300px;
-    padding: 40px;
+    display: inline-block; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    width: 250px;
 
 }
 
@@ -162,8 +156,6 @@ img{
 
 
 .arrow{
-    content: "»";
-    font-size: 11pt;
     display: inline;
     padding-left: 2pt;
     padding-right: 2pt;
@@ -188,15 +180,14 @@ img{
         width: 100%;
     }
     .content{
-
         margin-top: 20px;
-        width: 80%;
+        width: 60%;
         padding-top: 25px;
         max-height: none;
 
     }
     img{
-        height: 200px;
+        width: 200px;
     }
     .links a{
         padding-left: 10px;
@@ -212,9 +203,7 @@ img{
         padding-left: 12px;
         padding-right: 12px;
     }
-    img{
-        height: 300px;
-    }
+
 
     
 

@@ -1,48 +1,57 @@
 
 
 @font-face{
-    src: url(fonts/WorkSans-Medium.ttf);
+    src: url(../fonts/WorkSans-Medium.ttf);
     font-family: worksans;
     font-weight: 500;
 }
 @font-face{
-    src: url(fonts/WorkSans-Regular.ttf);
+    src: url(../onts/WorkSans-Regular.ttf);
     font-family: worksans;
     font-weight: 400;
 }
 @font-face{
-    src: url(fonts/WorkSans-Light.ttf);
+    src: url(../fonts/WorkSans-Light.ttf);
     font-family: worksans;
     font-weight: 100;
 }
-
 body { 
     padding: 0;
     margin: 0;   
-
-
+    overscroll-behavior-y: none;
+    
+    
+     
 }
 
-    
-.wrapper {
+.wrapper{
     font-family: worksans, Arial;
-    font-weight: 400;
-    color: black;
+    font-weight: 100;
+    color: white;
+    background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .8) ), url('../images/skate.jpeg');
+    background-position-x: center;
+    background-size: cover;
+    width: 100vw;
+    min-height: 100vh;
 
     display: flex; 
-    flex-direction: column;
+    flex-direction: row;
 
     align-items: center;
 
 
 
+
 }
+
+
 
 .centernav{
     float: left;
 
+
     display: flex;
-    
+
     flex-direction: column;
     text-align: center;
     justify-content: center;
@@ -53,6 +62,7 @@ body {
 
 }
 
+
 .bigname { 
     letter-spacing: .5px;
     font-size: 45px;
@@ -62,21 +72,33 @@ body {
     /* float: left; */
 }
 .squiggly {
-    background: url(images/underline.gif) bottom repeat-x;
+    /* background: url(images/underline.gif) bottom repeat-x; */
     display: inline;
 }
 
 a { 
     position: relative; }
 
-a:link{ color: blue; }
-a:visited { color: blue; }
+/* .content a:after {
+    content: '';
+
+    width: 99%;
+    position: absolute;
+    left: .5%;
+    bottom: -2%;
+    border-bottom: 1px solid;
+    } */
+
+a:link{ color: white; }
+a:visited { color: white; }
 a:hover {color: lightgrey}
+
 
 
 .links{
     margin:10px;
 }
+
 .links a{
     text-decoration: none;
     font-family: 'Courier New';
@@ -88,10 +110,9 @@ a:hover {color: lightgrey}
 
 }
 
-
-.links a:link{ color: black; }
-.links a:visited { color: black; }
-.links a:hover { color: lightgrey; }
+.links a:link{ color: lime;}
+.links a:visited { color: lime; }
+.links a:hover { color: white; }
 .links a.now:after{
     font-weight: 600;
     content: "^";
@@ -101,79 +122,53 @@ a:hover {color: lightgrey}
 
 }
 
-p{
-    margin-bottom: 25px;
-}
 
-.article{
-
-    border-bottom: 1px black;
-
-
-
-
-}
 
 .content{
-    border-left: 1px solid black;
-
-    width: 45%;
+    width: 60%;
+    /* max-width: 550px; */
+    padding: 50px;
+    font-size: 12pt;
     line-height: 1.5em;
 
+    border-left: 1px solid lime;
+}
 
-    
-    padding: 50px;
-    padding-top: 25px;
-    font-size: 12pt;
-
-
-
-    overflow-x: hidden;
-
+p img{
+    display:block; 
+    margin: 0 auto;
+    width: 40%;
 
 }
 
-.imgContainer{
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+
+
 img{
-    display: inline-block; 
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-
-    width: 250px;
+    display: block;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
 
 }
 
-.breadcrumbs{
-    font-size: 9pt;
-    display: inline;
+ul{
+    list-style-type: none;
 }
-
-
-.arrow{
-    display: inline;
-    padding-left: 2pt;
-    padding-right: 2pt;
+li{
+    margin: 10px 0;
 }
-
 .date {
     font-family: 'Courier New';
     display: inline;
 }
-
-
+.date:after{
+    content: "- ";
+    display: inline;
+}
 
 
 @media only screen and (max-width:700px){
     .wrapper {
         flex-direction: column; 
-        overflow: hidden;
-
 
     }
     .centernav{
@@ -181,13 +176,8 @@ img{
     }
     .content{
         margin-top: 20px;
-        width: 60%;
-        padding-top: 25px;
-        max-height: none;
-
-    }
-    img{
-        width: 200px;
+        width: 80%;
+        padding: 25px;
     }
     .links a{
         padding-left: 10px;
@@ -204,10 +194,10 @@ img{
         padding-right: 12px;
     }
 
-
     
 
 }
+
 
 
 
