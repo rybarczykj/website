@@ -27,28 +27,43 @@
         </div>
                         
         <div class="article">
+<p>
+    <p><a href = "https://www.when2meet.com/"> www.when2meet.com</a> is a simple web-based tool used to schedule meetings. 
+    A group leader sends out a link, individuals fill out their availability, and the website displays the most-available meeting times. 
+    The results are displayed live in the form of a multi-shaded green calendar, where darker greens means more people are available, and lighter greens mean fewer. 
+    </p>
+<p>
+    The idea to make art on a when2meet has actually been with me for a while, before I even knew how to code. 
+    I always thought it would be a funny prank for my improv troupe to open up a when2meet to schedule a practice only to find a minecraft creeper face.
+     The only thing stopping me, so I thought, was my artistic capacity. 
+     It wasn’t until this weekend that I realized I totally had the means to pull this off, and got right to down to business.
+</p>
+<p>
 
-            <p><a href = "https://www.when2meet.com/"> www.when2meet.com</a> is a simple web-based tool used to schedule meetings. 
-                A group leader send out a link, individuals fill out their availability, and
-                the website displays the most-available meeting times. The results are displayed live in the form of a multi-shaded green calendar, 
-                where darker greens means more people are available, and lighter greens mean fewer.</p>
-            <p> When2meets are a powerful solution to the logistic nightmare of scheduling meetings; I can attest to the amount of
-                valueable college student time they have saved over the years. Even still, they're pretty darn boring, especially
-                 within the context of improv troupe, Cujokra. For 5 minutes every trimester, our award-winning laugh per minute (LPM) rate grinds to screeching halt as we sit down to schedule our recurring practices. 
-                With the standup comedy group always on our heels in the LPM race, we can't afford to have a boring moment. I had to find a way to inject a joke into the process. 
-                It was through the lens that I took another look at when2meet.com, and saw a canvas.
-            </p>
-            <p> I made the tool in a weekend, having lots of fun, pulling lots of hair, and learning a lot about python, web scraping, and script running on websites.
-                In the end, here's how it basically works: Given an image and a when2meet link, the program pixelizes the image, converts it to grayscale, determines the darkness
-                of each pixel, and sends a corresponding number of bots one-by-one to the link to recreate the image. For the dark parts of the image, all or most bots are 'available', and for the
-                light parts, few are. </p>
-                
-               <p> 
-                It was a fun project and it turned out much better than I expected. My original goal was to make a creeper from minecraft-- a pretty
-                basic pixel art image, but by the end I was able to recognizebly render full-on photographs. This allowed for some pretty great reveals to my freinds
-                which consisted of inside joke photos or memes.
-                <a href = "https://github.com/rybarczykj/when2meet-art"> Here's</a> the github link, and an example photo below.
-           
+    Here's how it works: Given an image and a when2meet link, the program pixelizes the image, converts it to grayscale, 
+    determines the darkness of each pixel, and sends a corresponding number of bots one-by-one to the link to recreate the image. 
+    For the dark parts of the image, all or most bots are 'available', and for the light parts, few are.
+</p>
+
+<p>
+    One interesting challenge was how pixel art works on when2meet. 
+    One square box on the schedule represents 1 hour on 1 day, but availability can actually be specified down to 15-minute increments, 
+    meaning that for every 1 hour box, there are 4 rectangular slab-shaped pixels, making for an odd (but better!) style of pixel art. 
+    Essentially, I had 4 times the vertical resolution as horizontal. 
+    All I had to do is, when preprocessing, resize images to be 4 times as high as wide. 
+    They look tall and stretched out as references, but once rendered they look great.
+
+</p>
+<p>
+    My original goal of minecraft creeper from --a pretty basic pixel art image-- turned out to be so easy I moved on to more complicated images, 
+    allowing for some pretty great reveals to my friends (not attached, but I'm talking full-on recognizable inside joke photos). 
+    It definitely was a fun one, and due to how much I learned about python, web scraping, and script writing, you can't say it was <i>entirely</i> stupid and useless.
+ 
+        
+        <p><a href = "https://github.com/rybarczykj/when2meet-art">Here's</a>  the github link.
+</p>
+
+
         </div>
 
            
