@@ -44,8 +44,6 @@ body {
 
 }
 
-
-
 .centernav{
     float: left;
 
@@ -79,15 +77,6 @@ body {
 a { 
     position: relative; }
 
-/* .content a:after {
-    content: '';
-
-    width: 99%;
-    position: absolute;
-    left: .5%;
-    bottom: -2%;
-    border-bottom: 1px solid;
-    } */
 
 a:link{ color: white; }
 a:visited { color: white; }
@@ -123,7 +112,6 @@ a:hover {color: lightgrey}
 }
 
 
-
 .content{
     width: 60%;
     /* max-width: 550px; */
@@ -137,7 +125,7 @@ a:hover {color: lightgrey}
 p img{
     display:block; 
     margin: 0 auto;
-    width: 40%;
+    width: 50%;
 
 }
 
