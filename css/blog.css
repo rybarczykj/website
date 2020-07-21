@@ -73,7 +73,8 @@ body {
 }
 
 a { 
-    position: relative; }
+    position: relative; 
+}
 
 
 a:link{ color: white; }
@@ -107,6 +108,12 @@ a:hover {color: lightgrey}
     bottom: -70%; 
 
 }
+
+.fa{
+    text-decoration: none;
+    font-size: 75%;
+}
+
 
 p{
     letter-spacing: .5px;
