@@ -68,7 +68,7 @@ body {
     /* float: left; */
 }
 .squiggly {
-    background: url(images/underline.gif) bottom repeat-x;
+    background: url(../images/underline.gif) bottom repeat-x;
     display: inline;
     /* background-color: red; */
 }
