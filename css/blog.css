@@ -29,10 +29,7 @@ body {
 .wrapper {
     font-family: worksans, Arial;
     font-weight: 100;
-    color: white;
-    background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .8) ), url('../images/skate.jpeg');
-    background-position-x: center;
-    background-size: cover;
+    color: black;
     width: 100vw;
     min-height: 100vh;
 
@@ -77,9 +74,9 @@ a {
 }
 
 
-a:link{ color: white; }
-a:visited { color: white; }
-a:hover {color: lightgrey}
+a:link{ color: black; }
+a:visited { color: black; }
+a:hover {color: grey}
 
 
 .links{
@@ -97,9 +94,9 @@ a:hover {color: lightgrey}
 }
 
 
-.links a:link{ color: lime; }
-.links a:visited { color: lime; }
-.links a:hover { color: white; }
+.links a:link{ color: black; }
+.links a:visited { color: black; }
+.links a:hover { color: grey; }
 .links a.now:after{
     font-weight: 600;
     content: "^";
@@ -131,7 +128,7 @@ p{
     font-size: 12pt;
     line-height: 1.5em;
 
-    border-left: 1px solid lime;
+    border-left: 1px solid black;
 
 }
 p img{

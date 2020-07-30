@@ -28,9 +28,7 @@ body {
     font-family: worksans, Arial;
     font-weight: 100;
     color: black;
-    background-image: linear-gradient( rgba(0, 0, 0, .1), rgba(0, 0, 0, .1) ), url('none');
-    background-position-x: center;
-    background-size: cover;
+
     width: 100vw;
     min-height: 100vh;
 
@@ -70,8 +68,9 @@ body {
     /* float: left; */
 }
 .squiggly {
-    /* background: url(images/underline.gif) bottom repeat-x; */
+    background: url(images/underline.gif) bottom repeat-x;
     display: inline;
+    /* background-color: red; */
 }
 
 a { 
