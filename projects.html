@@ -4,8 +4,10 @@
 <head>
 <title>Jack Rybarczyk</title>
 <link rel="home" title="Home" href="/">
-<meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href ="all.css" type="text/css">
+<meta name="viewport" content="width=device-width" charset="UTF-8">
+<link rel="stylesheet" href ="css/blog.css" type="text/css">
+<script src="https://kit.fontawesome.com/91dc8573a4.js" crossorigin="anonymous"></script>
+
 
 </head>
 
@@ -21,7 +23,7 @@
                 <div class ="links">
                     <a href="index.html">Me</a>
                     <a href="projects.html" class = "now">Code</a>
-                    <a href="designhome.html">Design</a>
+                    <!-- <a href="designhome.html">Design</a> -->
                     <a href="bloghome.html">Blog</a>
                     <a href="contactme.html">Contact</a>
                 </div>
@@ -29,69 +31,67 @@
             
         </div>
         <div class = "content">
-        <h3>Recent Projects</h3> 
-            <ul> - Made a fun tool that draws art on when2meet.com</ul>
-            <ul> - Contributed to bpython, a fancy interface to the python interpreter</ul>
-            <ul> - Contributed to curtsies, a python library for interacting with the terminal in cool ways:
-                colored text, colored text arrays, and curor movements
-            </ul>
-            <ul> - Made a command line 2-player tron clone</ul>
-            <ul> - Made this website!!</ul>
-            <ul> - Made a website which visualizes lyrical word-use data of Billboard top 50 songs
-                over time
-            </ul>
-            <ul> - Designed and distrubted jerseys for my ultimate frisbee team, the Gods of Plastic</ul>
+        <!-- <p> I love <b>python</b>, but I'll work in anything. I have experience in Java, SQL, HTML, CSS. </p>
+        
+        <p>I'm familiar with Git and AWS. I've coded remote and in-person, in pairs and solo. 
+            I value making self-documentating code, and descriptive docstrings if not.
+        </p> -->
+        <h2>My summer</h2> 
 
-            <!-- <h2>Art on when2meet.com</h2>
-            <p>6/22/2020</p>
-            <p>If you're not familiar, when2meet.com is a simple web-based tool used to schedule group meetings. A group leader sends out a link, individuals fill out their availability, and
-                the website displays the best meeting times in the form of a multi-shaded greenscale calendar, where darker greens means more people are available, and lighter greens mean fewer.</p>
-            <p>I recently built a tool that manipulates this shading aspect to create unique pixel art. In short, given an image and a when2meet link, the program pixelizes the image, converts it to grayscale, determines the darkness
-                of each pixel, and sends a corresponding number of bots one-by-one to the link to recreate the image. For the dark parts of the image, all or most bots are 'available', and for the
-                light parts, few are.
-            </p> -->
+        <p> I've been spending my summer contracting remotely for <a href="https://www.quirk-econsulting.com">quirk e-consulting</a>, a team 
+            sponsored and created by <a href="ballingt.com"> Thomas Balligner</a>, contributing to and improving upon existing open-source 
+            projects. It's been fun, and I've learned a lot about software engineering in the real world. Here's some of what I've worked on so far:     
+        </p> 
 
-            <!-- <div class="grid-container">
-                <div class="grid-entry">
-                    
-                    <img src="images/mike.png" alt="plane">
-                    <h3>art on when2meet.com</h3>
+            
+            <h3>bpython 
+                    <a class="fa fa-github" aria-hidden="true" href="https://github.com/bpython/bpython"></a>
+            </h3> 
+            
+        <p>
+            
+            bpython is a fancy interface to the python interpreter, with autocomplete, variable descriptors, syntax highlighting, auto-indentation, 
+            and my personal favorite: undo. 
+            Stay tuned to hear about some of my contributions.
+            <!-- Read about some of what I did <a>here</a>. -->
 
-                </div>
-                <div class="grid-entry">
-                    <img src="images/hudson.jpeg" alt="plane">
+        </p>
+        <img src="images/gifs/bpython.gif" class="big" width = "500px">
+        <h3>curtsies
+            <a class="fa fa-github" aria-hidden="true" href="https://github.com/bpython/curtsies"></a>
+        </h3> 
+        <p> Curtsies, built to be the front-end of bpython, is a library with various
+            terminal visual operations, like cursor
+            moving, and colored strings. Here's a game I made to demonstrate:</p>
+        <img src="images/gifs/tron.gif" class="big" width = "500px">
 
-                    <h3>tron</h3>
-                </div>
-                <div class="grid-entry">
-                    <img src="images/victory.jpeg" alt="plane">
-                </div>
-                <div class="grid-entry">
-                    <img src="images/sky.jpeg" alt="plane">
-                </div>
-                <div class="grid-entry">
-                    <img src="images/skate.jpeg" alt="plane">
-                </div>
-                <div class="grid-entry">
-                    <img src="images/sf.jpeg" alt="plane">
-                </div>
-                <div class="grid-entry">
-                    <img src="images/boise.jpeg" alt="plane">
-                </div>
-                <div class="grid-entry">
-                    <img src="images/sunset.jpeg" alt="plane">
-                </div>
-                <div class="grid-entry">
-                    <img src="images/plane.jpeg" alt="plane">
-                </div>
-            </div> -->
+        
+        </p>
+        <h2>Personal Projects</h3> 
+            <h3> when2meet art
+                <a class="fa fa-github" aria-hidden="true" href="https://github.com/rybarczykj/when2meet-art"></a>
+
+            </h3> 
+
+            <p>I made a script that allowed me to render images onto the calendar on popular group meeting site
+                <a href="when2meet.com">when2meet.com</a>. Here's a <a href="when2meet.html">blog post</a> I wrote about it.
+            </p>
+            <img src="images/gifs/jordan.gif" class="big" width = "500px">
+
+            <h3>personal website
+                <a class="fa fa-github" aria-hidden="true" href="https://github.com/rybarczykj/website"></a>
+            </h3>
+            <p> I don't want to forget what I do, so I made this website to document my projects. It also makes a great portfolio. I built it from scratch with
+                HTML and CSS, hosting it as a static s3 site on AWS.
+            </p>
+            <img src="images/gifs/typing.gif" class="big" width = "500px">
+
+
+   
 
         </div>
 
-        
-        
-            <!-- <img src="IMG_6343.jpeg" alt="Me with my dog charlie"> -->
-    </div>
+            </div>
 
 
 </body>
