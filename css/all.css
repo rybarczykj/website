@@ -117,6 +117,16 @@ a:hover {color: grey}
     font-size: 75%;
 
 }
+.fa{
+    text-decoration: none;
+    font-size: 75%;
+    font-weight: 100;
+}
+.links .fa{
+    font-size: 100%;
+}
+
+
 
 
 p{

@@ -110,9 +110,14 @@ a:hover {color: grey}
 
 }
 
+
 .fa{
     text-decoration: none;
     font-size: 75%;
+    font-weight: 100;
+}
+.links .fa{
+    font-size: 100%;
 }
 
 
@@ -167,6 +172,12 @@ img{
 .date {
     font-family: 'Courier New';
     display: inline;
+}
+
+.logos{
+    padding: 20px;
+    font-size: 20px;
+    letter-spacing: 20px;
 }
 
 
