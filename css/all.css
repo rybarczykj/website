@@ -195,7 +195,7 @@ a:hover {color: var(--hover-color-normal); }
 
 p{
     letter-spacing: .5px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .content{
@@ -204,7 +204,6 @@ p{
     padding: 50px;
     font-size: 12pt;
     line-height: 1.5em;
-
     border-left: 1px solid var(--accent-color);
 }
 .content-scroll{
