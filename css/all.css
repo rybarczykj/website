@@ -235,9 +235,7 @@ p{
 }
 
 p img{
-    display:block; 
-    margin: 0 auto;
-    width: 50%;
+    max-width: 70%;
 
 }
 
@@ -288,7 +286,7 @@ li{
         overflow-y: visible;
     }
     img{
-        width: 90%;
+        max-width: 90%;
     }
     .links a{
         padding-left: 10px;
@@ -304,9 +302,7 @@ li{
         padding-left: 12px;
         padding-right: 12px;
     }
-    /* img{
-        height: 300px;
-    } */
+
 
     
 
