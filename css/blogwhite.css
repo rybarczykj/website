@@ -28,7 +28,7 @@ body {
     font-family: worksans, Arial;
     font-weight: 400;
     color: black;
-    background-image: linear-gradient( rgba(0, 0, 0, .05), rgba(0, 0, 0, .05) ), url('None');
+    background-image: linear-gradient( rgba(0, 0, 0, .02), rgba(0, 0, 0, .02) ), url('None');
     background-position-x: center;
     background-size: cover;
 

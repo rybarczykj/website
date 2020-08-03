@@ -27,7 +27,7 @@ body {
     --hover-color-nav: gray;
     --text-color: black;
     --not-text-color: rgba(240, 240, 240); 
-    --background: linear-gradient( rgba(0, 0, 0, .05), rgba(0, 0, 0, .05) ), url('None');
+    --background: linear-gradient( rgba(0, 0, 0, .02), rgba(0, 0, 0, .02) ), url('None');
     --squiggly: url('../images/underline.gif') bottom repeat-x;
 
 }
