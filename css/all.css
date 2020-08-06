@@ -179,8 +179,8 @@ a:hover {color: var(--hover-color-normal); }
 .links a{
     text-decoration: none;
     font-family: 'Courier New';
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 16px;
+    padding-right: 16px;
     padding-top: 3px;
     padding-bottom: 3px;
     font-size: 10pt;
