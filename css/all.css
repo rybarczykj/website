@@ -53,7 +53,7 @@ body {
     position: fixed;
     top: 0;
     right: 2px;
-    font-size: 12px;
+    font-size: 10pt;
     font-weight: 500;
 
 
@@ -140,7 +140,7 @@ body {
 
 .bigname { 
     letter-spacing: .5px;
-    font-size: 45px;
+    font-size: 28pt;
     margin-top: 10px;
     margin-bottom: 3px; 
     font-weight: 500;
@@ -183,7 +183,7 @@ a:hover {color: var(--hover-color-normal); }
     padding-right: 18px;
     padding-top: 3px;
     padding-bottom: 3px;
-
+    font-size: 10pt;
 }
 
 .links a:link{ color: var(--accent-color);}
@@ -214,7 +214,7 @@ p{
     width: 60%;
     /* max-width: 550px; */
     padding: 50px;
-    font-size: 12pt;
+    font-size: 10pt;
     line-height: 1.5em;
     border-left: 1px solid var(--accent-color);
 }
@@ -226,7 +226,7 @@ p{
     max-height: 85vh;
     
     padding: 50px;
-    font-size: 12pt;
+    font-size: 10pt;
     line-height: 1.5em;
 
     border-left: 1px solid var(--accent-color);
