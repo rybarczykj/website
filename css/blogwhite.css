@@ -111,24 +111,28 @@ p{
 
 .article{
 
-    border-bottom: 1px black;
-
+    padding-left: 50px;
+    padding-right: 50px;
 
 
 
 }
 
 .content{
-    border-left: 1px solid black;
-
-    width: 45%;
+    width: 80%;
+    max-width: 600px;
+    min-width: 250px;
     line-height: 1.5em;
+    border-left: 1pt solid black;
+
+
+
 
 
     
     padding: 50px;
     padding-top: 25px;
-    font-size: 12pt;
+    font-size: 9pt;
 
 
 
@@ -187,41 +191,31 @@ img.big{
         width: 100%;
     }
     .content{
-        margin-top: 20px;
-        width: 60%;
-        padding-top: 25px;
-        max-height: none;
+        border-left: 0;
 
     }
+
     img{
         width: 200px;
     }
     img.big{
         width: 300px;
-        
     }
     .links a{
-        padding-left: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .article{
         padding-right: 10px;
+        padding-left: 10px;
     }
-    
+
 
 }
 
 
-@media only screen and (min-width:700px) and (max-width:1200px){
-    .links a{
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-    img.big{
-        width: 450px;
-    }
 
 
-    
-
-}
 
 
 

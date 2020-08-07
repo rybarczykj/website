@@ -8,69 +8,61 @@
 <link rel="stylesheet" href ="css/blogwhite.css" type="text/css">
 
 </head>
-
 <body>
     <div class="wrapper">
         <div class = "content" >
-        <div class = "breadcrumbs">
-            <a href="index.html">Jack Rybarczyk</a>
-            <div class = "arrow"> 
-                »
+            <div class = "breadcrumbs">
+                <a href="index.html">Jack Rybarczyk</a>
+                <div class = "arrow"> 
+                    »
+                </div>
+                <a href="bloghome.html">Blog</a>
             </div>
-            <a href="bloghome.html">Blog</a>
-        </div>
-        <h1>Art on when2meet.com</h1> 
-        <div class= "date"> 07/01/2020</div>
-        <div class = "imgContainer">
-            <img src="images/mike.png" alt="mike">
-            <img src="images/homer.png" alt="homer">
-        </div>
+            <h1>Art on when2meet.com</h1> 
+            <div class= "date"> 07/01/2020</div>
+            <div class = "imgContainer">
+                <img src="images/mike.png" alt="mike">
+            </div>
                         
-        <div class="article">
-<p>
-    <p><a href = "https://www.when2meet.com/"> www.when2meet.com</a> is a simple web-based tool used to schedule meetings. 
-    A group leader sends out a link, individuals fill out their availability, and the website displays the most-available meeting times in the form of a multi-shaded green calendar,
-     where darker greens means more people are available, and lighter greens mean fewer. 
-    </p>
-<p>
-    The idea to make art on a when2meet has actually been with me for a while, before I even knew how to code. 
-    I always thought it would be a funny if I had my improv troupe open up a when2meet to schedule a practice only to find a minecraft creeper face.
-     The only thing stopping me, so I thought, was my artistic capacity. 
-     It wasn’t until this weekend that I realized I totally had the means to pull this off, and got right to down to business.
-</p>
-<p>
+            <div class="article">
+                <p>
+                    <a href = "https://www.when2meet.com/"> www.when2meet.com</a> is a simple web-based tool used to schedule meetings. 
+                    A group leader sends out a link, individuals fill out their availability, and the website displays the most-available meeting times in the form of a multi-shaded green calendar,
+                    where darker greens means more people are available, and lighter greens mean fewer. 
+                </p>
+                <p>
+                    I thought it would be funny if I could make art on this website, similar to how people make <a href="https://github.com/gelstudios/gitfiti">art</a> on github
+                    contribution histories, so I got down to work.
+                </p>
 
-    Here's how it works: Given an image and a when2meet link, the program pixelizes the image, converts it to grayscale, 
-    determines the darkness of each pixel, and sends a corresponding number of bots one-by-one to the link to recreate the image. 
-    For the dark parts of the image, all or most bots are 'available', and for the light parts, few are.
-</p>
+                <p>
+                    Here's how it works: Given an image and a when2meet link, the program pixelizes the image, converts it to grayscale, 
+                    determines the darkness of each pixel, and sends a corresponding number of bots one-by-one to the link to recreate the image. 
+                    For the dark parts of the image, all or most bots are 'available', and for the light parts, few are.
+                </p>
 
-<p>
-    An interesting challenge was how pixel art translated to when2meet. 
-    One square box on the schedule represents 1 hour on 1 day, but availability can actually be specified down to 15-minute increments, 
-    meaning that for every 1 hour box, there are 4 rectangular slab-shaped pixels, making for an odd (but better!) style of pixel art. 
-    Essentially, I had 4 times the vertical resolution as horizontal. 
-    All I had to do is, when preprocessing, resize images to be 4 times as high as wide. 
-    They look tall and stretched out as references, but once rendered, they looked great.
+                <div class = "imgContainer">
+                    <img src="images/homer.png" alt="homer">
+                </div>
 
-</p>
-<p>
-    My original goal of minecraft creeper —a pretty basic pixel art image— turned out to be so easy that I moved on to more complicated images, 
-    allowing for some pretty great reveals to my friends (not attached, but I'm talking full-on recognizable inside joke photos). 
-    It definitely was a fun one, and due to how much I learned about python, web scraping, and script writing, you can't say it was <i>entirely</i> stupid and useless.
- 
-        
-        <p><a href = "https://github.com/rybarczykj/when2meet-art">Here's</a>  the github link.
-</p>
+                <p>
+                    An interesting challenge was how pixel art translated to when2meet. 
+                    One square box on the schedule represents 1 hour on 1 day, but you can actually be specify down to 15-minute increments.
+                    Essentially, I had 4 times the vertical resolution as horizontal. 
+                    To prepare images accordingly, I just had to, when preprocessing, resize images to be 4 times as high as wide. 
 
+                </p>
 
-        </div>
-
-           
-
+                <p>
+                    My original goal of minecraft creeper —a pretty basic pixel art image— turned out to be so easy that I moved on to more complicated images,  
+                    This project was definitely a fun one, and due to how much I learned about python, web scraping, and script writing, you can't say it was <i>entirely</i> stupid and useless.
+                
+                    
+                        
+                        <p><a href = "https://github.com/rybarczykj/when2meet-art">Here's</a>  the github link.
+                </p>
+            </div>
         </div>
     </div>
-
-
 </body>
 </html>
