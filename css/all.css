@@ -6,7 +6,7 @@
     font-weight: 500;
 }
 @font-face{
-    src: url(../onts/WorkSans-Regular.ttf);
+    src: url(../fonts/WorkSans-Regular.ttf);
     font-family: worksans;
     font-weight: 400;
 }
@@ -205,7 +205,7 @@ a:hover {color: var(--hover-color-normal); }
 
 
 p{
-    letter-spacing: .5px;
+    letter-spacing: .4px;
     margin-bottom: 15px;
 }
 
@@ -235,6 +235,7 @@ p{
 .text {
     padding-left: 25px;
     padding-right: 50px;
+    max-width: 700px;
 }
 
 p img{

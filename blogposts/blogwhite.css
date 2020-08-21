@@ -26,7 +26,7 @@ body {
     
 .wrapper {
     font-family: worksans, Arial;
-    font-weight: 400;
+    font-weight: 100;
     color: black;
     background-image: linear-gradient( rgba(0, 0, 0, .02), rgba(0, 0, 0, .02) ), url('None');
     background-position-x: center;
@@ -84,7 +84,6 @@ a:hover {color: lightgrey}
 .links a{
     text-decoration: none;
     font-family: 'Courier New';
-    /* font-size: 16px; */
     padding-left: 18px;
     padding-right: 18px;
     padding-top: 3px;
@@ -132,7 +131,7 @@ p{
     
     padding: 50px;
     padding-top: 25px;
-    font-size: 9pt;
+    font-size: 10pt;
 
 
 
