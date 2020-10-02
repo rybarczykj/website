@@ -152,7 +152,7 @@ body {
 
 .squiggly::after{
     content: "Rybarczyk";
-}
+} 
 
 .squiggly:hover{
     background: None;
