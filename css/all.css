@@ -178,6 +178,10 @@ a:visited { color: var(--text-color);  }
 a:hover {color: var(--hover-color-normal); }
 
 
+.breadcrumbs a{
+    padding: 10px;
+}
+
 
 .links{
     margin:5px;
@@ -192,8 +196,8 @@ a:hover {color: var(--hover-color-normal); }
     font-family: 'Courier New';
     padding-left: 11px;
     padding-right: 11px;
-    padding-top: 1px;
-    padding-bottom: 3px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     font-size: 8pt;
 }
 
@@ -232,24 +236,23 @@ p{
 }
 .content-scroll{
     width: 65%;
-    font-size: 9pt;
     padding: 50px;
+    font-size: 9pt;
+    line-height: 1.5em;
+    border-left: 1px solid var(--bar-color);
+
 
 
 /* DIFFERENT PART */
     overflow-y: auto;
     max-height: 85vh;
     
-    line-height: 1.5em;
-    border-left: 1px solid var(--bar-color);
-
-    
 }
 
 .text {
-    padding-left: 25px;
+    padding-left: 50px;
     padding-right: 25px;
-    max-width: 700px;
+    max-width: 600px;
 }
 
 p img{
@@ -274,37 +277,34 @@ li{
     font-family: 'Courier New';
     display: inline;
 }
-.date:after{
+/* .date:after{
     content: "- ";
     display: inline;
-}
+} */
 
 
 
 .grid-container{
-    padding-top: 20px;
-    display: grid;
-    gap: 30px 30px;
-    grid-template-columns: repeat(auto-fill, 300px); /*width*/
-    grid-template-rows: repeat(auto-fill, 185px); /*verticallt*/
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    
 }
 
 
 .grid-entry{
-    /* border-bottom: 10px solid var(--bar-color);
-    margin-bottom: 5px;
-    padding-left: 5px; */
     text-align: center;
-
-
+    width: 300px;
+    height: 185px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
 
 }
 
 .grid-entry-img-wrapper{
-    /* border: 2px solid rgb(25, 25, 25); */
     box-shadow: 0px 1px 7px  grey;
-    /* background-color: black; */
-
 
 
 }
@@ -316,9 +316,6 @@ li{
     vertical-align: top;
     object-fit: cover;
 
-    /* border-radius: 10px; */
-    /* -webkit-filter: grayscale(100%);
-    filter: grayscale(100%); */
 }
 
 .grid-entry:hover img {	
@@ -361,24 +358,14 @@ li{
         max-height: none;
         overflow-y: visible;
     }
-    img{
-        max-width: 90%;
-    }
-    .links a{
-        /* padding-left: 10px;
-        padding-right: 10px; */
-    }
+
     
 
 }
 
 
 @media only screen and (min-width:700px) and (max-width:1200px){
-    .links a{
-        /* padding-left: 12px;
-        padding-right: 12px; */
-    }
-
+   
 
     
 
