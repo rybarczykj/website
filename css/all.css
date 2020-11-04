@@ -158,15 +158,19 @@ body {
     display: inline;
 }
 
-.squiggly::after{
-    content: "Rybarczyk";
+.squiggly .dissappearingname{
+    display: inline;
 }
 
 .squiggly:hover{
     background: None;
 }
+
 .squiggly:hover::after{
     content: "Re·bar·chek"
+}
+.squiggly:hover .dissappearingname{
+    display: none;
 }
 
 a { 
@@ -223,6 +227,11 @@ a:hover {color: var(--hover-color-normal); }
 p{
     letter-spacing: .4px;
     margin-bottom: 10px;
+}
+
+.intro{
+    font-size: 11pt;
+    float:left;
 }
 
 .content{
