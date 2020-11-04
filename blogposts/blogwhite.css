@@ -1,67 +1,56 @@
-
-
-@font-face{
+@font-face {
     src: url(../fonts/WorkSans-Medium.ttf);
     font-family: worksans;
     font-weight: 500;
 }
-@font-face{
+@font-face {
     src: url(../fonts/WorkSans-Regular.ttf);
     font-family: worksans;
     font-weight: 400;
 }
-@font-face{
+@font-face {
     src: url(../fonts/WorkSans-Light.ttf);
     font-family: worksans;
     font-weight: 100;
 }
 
-body { 
+body {
     padding: 0;
-    margin: 0;   
-
-
+    margin: 0;
 }
 
-    
 .wrapper {
     font-family: worksans, Arial;
     font-weight: 100;
     color: black;
-    background-image: linear-gradient( rgba(0, 0, 0, .02), rgba(0, 0, 0, .02) ), url('None');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02)), url("None");
     background-position-x: center;
     background-size: cover;
 
-
-    display: flex; 
+    display: flex;
     flex-direction: column;
 
     align-items: center;
-
-
-
 }
 
-.centernav{
+.centernav {
     float: left;
 
     display: flex;
-    
+
     flex-direction: column;
     text-align: center;
     justify-content: center;
 
     width: 40%;
     padding: 10px;
-
-
 }
 
-.bigname { 
-    letter-spacing: .5px;
+.bigname {
+    letter-spacing: 0.5px;
     font-size: 45px;
     margin-top: 10px;
-    margin-bottom: 3px; 
+    margin-bottom: 3px;
     font-weight: 500;
     /* float: left; */
 }
@@ -70,164 +59,140 @@ body {
     display: inline;
 }
 
-a { 
-    position: relative; }
-
-a:link{ color: blue; }
-a:visited { color: blue; }
-a:hover {color: lightgrey}
-
-
-.links{
-    margin:10px;
+a {
+    position: relative;
 }
-.links a{
+
+a:link {
+    color: blue;
+}
+a:visited {
+    color: blue;
+}
+a:hover {
+    color: lightgrey;
+}
+
+.links {
+    margin: 10px;
+}
+.links a {
     text-decoration: none;
-    font-family: 'Courier New';
+    font-family: "Courier New";
     padding-left: 18px;
     padding-right: 18px;
     padding-top: 3px;
     padding-bottom: 3px;
-
 }
 
-
-.links a:link{ color: black; }
-.links a:visited { color: black; }
-.links a:hover { color: lightgrey; }
-.links a.now:after{
+.links a:link {
+    color: black;
+}
+.links a:visited {
+    color: black;
+}
+.links a:hover {
+    color: lightgrey;
+}
+.links a.now:after {
     font-weight: 600;
     content: "^";
     position: absolute;
     right: 45%;
-    bottom: -70%; 
-
+    bottom: -70%;
 }
 
-p{
+p {
     margin-bottom: 25px;
 }
 
-.article{
-
+.article {
     padding-left: 50px;
     padding-right: 50px;
-
-
-
 }
 
-.content{
+.content {
     width: 80%;
     max-width: 600px;
     min-width: 250px;
     line-height: 1.5em;
     border-left: 1pt solid black;
 
-
-
-
-
-    
     padding: 50px;
     padding-top: 25px;
     font-size: 10pt;
 
-
-
     overflow-x: hidden;
-
-
 }
 
-.imgContainer{
+.imgContainer {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-img{
-    display: inline-block; 
+img {
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
 
     width: 250px;
-    box-shadow: 0px 1px 7px  grey;
-
+    box-shadow: 0px 1px 7px grey;
 }
-img.big{
+img.big {
     width: 600px;
-    
 }
 
-.breadcrumbs{
+.breadcrumbs {
     font-size: 9pt;
     display: inline;
 }
 
-
-.arrow{
+.arrow {
     display: inline;
     padding-left: 2pt;
     padding-right: 2pt;
 }
 
 .date {
-    font-family: 'Courier New';
+    font-family: "Courier New";
     display: inline;
 }
 
 code {
     background-color: lightgray;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(0, 0, 0, 0.1);
     padding-left: 3px;
     padding-right: 3px;
 
     border-radius: 3px;
 }
 
-
-
-
-@media only screen and (max-width:700px){
+@media only screen and (max-width: 700px) {
     .wrapper {
-        flex-direction: column; 
+        flex-direction: column;
         overflow: hidden;
-
-
     }
-    .centernav{
+    .centernav {
         width: 100%;
     }
-    .content{
+    .content {
         border-left: 0;
-
     }
 
-    img{
+    img {
         width: 200px;
     }
-    img.big{
+    img.big {
         width: 300px;
     }
-    .links a{
+    .links a {
         padding-left: 0px;
         padding-right: 0px;
     }
-    .article{
+    .article {
         padding-right: 10px;
         padding-left: 10px;
     }
-
-
 }
-
-
-
-
-
-
-
-
-

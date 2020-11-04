@@ -1,82 +1,109 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Jack Rybarczyk</title>
-<meta name=”description” content= "Jack Rybarczyk Personal Website | Why You Should Use Bpython" >
-<link rel="home" title="Home" href="/">
-<meta name="viewport" content="width=device-width" charset="UTF-8">
-<link rel="stylesheet" href ="blogwhite.css" type="text/css">
-
-</head>
-<body>
-    <div class="wrapper">
-        <div class = "content" >
-            <div class = "breadcrumbs">
-                <a href="../index.html">Jack Rybarczyk</a>
-                <div class = "arrow"> 
-                    »
+    <head>
+        <title>Jack Rybarczyk</title>
+        <meta
+            name="”description”"
+            content="Jack Rybarczyk Personal Website | Why You Should Use Bpython"
+        />
+        <link rel="home" title="Home" href="/" />
+        <meta name="viewport" content="width=device-width" charset="UTF-8" />
+        <link rel="stylesheet" href="blogwhite.css" type="text/css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="content">
+                <div class="breadcrumbs">
+                    <a href="../index.html">Jack Rybarczyk</a>
+                    <div class="arrow">»</div>
+                    <a href="../bloghome.html">Blog</a>
                 </div>
-                <a href="../bloghome.html">Blog</a>
-            </div>
-            <h1>Why you should use bpython</h1> 
-            <div class= "date"> 08/15/2020</div>
-                        
-            <div class="article">
-                <p>
-                   
-                </p>
+                <h1>Why you should use bpython</h1>
+                <div class="date">08/15/2020</div>
 
-            
-                <h2>Intro</h2>
+                <div class="article">
+                    <p></p>
 
-                <p> Anyone who's used the python interactive interpreter will tell you the UI sucks. It's truly a great tool for quickly typing python code, but
-                    if you're not perfect —flawless syntax and indentation, incredible forethought, ability to thrive in a boring black-and-white environment,
-                    and total omniscience of all method names and arguments— 
-                    your terminal will quickly fill up with errors. </p>   
+                    <h2>Intro</h2>
 
-                <p>
-                    Enter bpython. A beautiful, wonderful, lightweight, free, open-source, interface to the python interpreter here to save the day. 
-                    If you ask me, all python developers should use it. But don't take my word for it; I worked on the project. Try it yourself!
-                </p>
-                <h2>Interactive Demo</h2>
-                <p>
-                    The REPL below already has bpython installed. Just type <code>bpython</code> to start it up. 
-                    
-                    Note: browser performance is a little slow and some features are buggy, but you should be able to get an idea
-                    of the features.
-                </p>
-          
+                    <p>
+                        Anyone who's used the python interactive interpreter will tell you the UI
+                        sucks. It's truly a great tool for quickly typing python code, but if you're
+                        not perfect —flawless syntax and indentation, incredible forethought,
+                        ability to thrive in a boring black-and-white environment, and total
+                        omniscience of all method names and arguments— your terminal will quickly
+                        fill up with errors.
+                    </p>
 
-            </div>
+                    <p>
+                        Enter bpython. A beautiful, wonderful, lightweight, free, open-source,
+                        interface to the python interpreter here to save the day. If you ask me, all
+                        python developers should use it. But don't take my word for it; I worked on
+                        the project. Try it yourself!
+                    </p>
+                    <h2>Interactive Demo</h2>
+                    <p>
+                        The REPL below already has bpython installed. Just type
+                        <code>bpython</code> to start it up. Note: browser performance is a little
+                        slow and some features are buggy, but you should be able to get an idea of
+                        the features.
+                    </p>
+                </div>
 
-                <iframe height="400px" width="100%" src="https://repl.it/repls/PeacefulImperturbableSoftwareengineer?lite=true&outputonly=1" scrolling="yes" ></iframe>
+                <iframe
+                    height="400px"
+                    width="100%"
+                    src="https://repl.it/repls/PeacefulImperturbableSoftwareengineer?lite=true&outputonly=1"
+                    scrolling="yes"
+                ></iframe>
 
-            </iframe>
-            <div class="article">
-                <p> Things to try
+                <div class="article">
+                    <p>Things to try</p>
                     <ul>
-                        <li> Play around a bit. You'll quickly notice syntax highlighting as you type. Helpful!</li>
-                        <li> Make a mistake? Press control + R to undo your last input. (this feature alone was enough to convince me).</li>
-                        <li> Try defining a class or function. Auto indentation, syntax highlighting, and undo should make it easy.</li>
-                        <li> Type <code> import math</code> (or some other library) and then <code>math.</code> to see suggestions. 
-                            Tab through them and type an open paren to see the method signature!</li>    
+                        <li>
+                            Play around a bit. You'll quickly notice syntax highlighting as you
+                            type. Helpful!
+                        </li>
+                        <li>
+                            Make a mistake? Press control + R to undo your last input. (this feature
+                            alone was enough to convince me).
+                        </li>
+                        <li>
+                            Try defining a class or function. Auto indentation, syntax highlighting,
+                            and undo should make it easy.
+                        </li>
+                        <li>
+                            Type <code> import math</code> (or some other library) and then
+                            <code>math.</code> to see suggestions. Tab through them and type an open
+                            paren to see the method signature!
+                        </li>
                     </ul>
-                </p>
 
-            <p>
-                Convinced?  Go download it! Just type <code>pip install bpython</code> from the command line and you're
-                good to go. Then try these other features.
-                <ul>
-                    <li> Press F7 to edit your bpython session in progress. Make some changes to inputs, and when you close the file, the session will recompile with your changes.</li>
-                    <li> Don't like vim as the default editor? Me neither. Open the config file with F3, and go to line ~40 and follow the simple instructions
-                        to change it to VSCode or Atom. There are some other useful configurations in that file as well.
-                    </li>
-                </ul>
-            </p>
-            <p> For more info, check out bpython's <a href = "https://github.com/bpython/bpython">Github</a> or <a href = "https://www.bpython-interpreter.org/">website</a>.
-            </p>
+                    <p>
+                        Convinced? Go download it! Just type <code>pip install bpython</code> from
+                        the command line and you're good to go. Then try these other features.
+                    </p>
+
+                    <ul>
+                        <li>
+                            Press F7 to edit your bpython session in progress. Make some changes to
+                            inputs, and when you close the file, the session will recompile with
+                            your changes.
+                        </li>
+                        <li>
+                            Don't like vim as the default editor? Me neither. Open the config file
+                            with F3, and go to line ~40 and follow the simple instructions to change
+                            it to VSCode or Atom. There are some other useful configurations in that
+                            file as well.
+                        </li>
+                    </ul>
+                    <p>
+                        For more info, check out bpython's
+                        <a href="https://github.com/bpython/bpython">Github</a> or
+                        <a href="https://www.bpython-interpreter.org/">website</a>.
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

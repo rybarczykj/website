@@ -1,69 +1,78 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Jack Rybarczyk</title>
-<meta name=”description” content= "Jack Rybarczyk Personal Website | Making Art On when2meet" >
-<link rel="home" title="Home" href="/">
-<meta name="viewport" content="width=device-width" charset="UTF-8">
-<link rel="stylesheet" href ="blogwhite.css" type="text/css">
-
-</head>
-<body>
-    <div class="wrapper">
-        <div class = "content" >
-            <div class = "breadcrumbs">
-                <a href="../index.html">Jack Rybarczyk</a>
-                <div class = "arrow"> 
-                    »
+    <head>
+        <title>Jack Rybarczyk</title>
+        <meta
+            name="”description”"
+            content="Jack Rybarczyk Personal Website | Making Art On when2meet"
+        />
+        <link rel="home" title="Home" href="/" />
+        <meta name="viewport" content="width=device-width" charset="UTF-8" />
+        <link rel="stylesheet" href="blogwhite.css" type="text/css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="content">
+                <div class="breadcrumbs">
+                    <a href="../index.html">Jack Rybarczyk</a>
+                    <div class="arrow">»</div>
+                    <a href="../bloghome.html">Blog</a>
                 </div>
-                <a href="../bloghome.html">Blog</a>
-            </div>
-            <h1>Art on when2meet.com</h1> 
-            <div class= "date"> 07/01/2020</div>
-            <div class = "imgContainer">
-                <img src="blogimages/mike.png" alt="mike">
-            </div>
-                        
-            <div class="article">
-                <p>
-                    <a href = "https://www.when2meet.com/"> www.when2meet.com</a> is a simple web-based tool used to schedule meetings. 
-                    A group leader sends out a link, individuals fill out their availability, and the website displays the most-available meeting times in the form of a multi-shaded green calendar,
-                    where darker greens means more people are available, and lighter greens mean fewer. 
-                </p>
-                <p>
-                    I thought it would be funny if I could make art on this website, similar to how people make <a href="https://github.com/gelstudios/gitfiti">art</a> on github
-                    contribution histories.
-                </p>
-
-                <p>
-                    Here's how it works: Given an image and a when2meet link, the program pixelizes the image, converts it to grayscale, 
-                    determines the darkness of each pixel, and sends a corresponding number of bots one-by-one to the link to recreate the image. 
-                    For the dark parts of the image, all or most bots are 'available', and for the light parts, few are.
-                </p>
-
-                <div class = "imgContainer">
-                    <img src="blogimages/homer.png" alt="homer">
+                <h1>Art on when2meet.com</h1>
+                <div class="date">07/01/2020</div>
+                <div class="imgContainer">
+                    <img src="blogimages/mike.png" alt="mike" />
                 </div>
 
-                <p>
-                    An interesting challenge was how pixel art translated to when2meet. 
-                    One square box on the schedule represents 1 hour on 1 day, but you can actually specify down to <i>15-minute </i> increments.
-                    Essentially, I had 4 times the vertical resolution as horizontal. 
-                    To prepare images accordingly, I just had to resize them to be 4 times as high as wide. 
+                <div class="article">
+                    <p>
+                        <a href="https://www.when2meet.com/"> www.when2meet.com</a> is a simple
+                        web-based tool used to schedule meetings. A group leader sends out a link,
+                        individuals fill out their availability, and the website displays the
+                        most-available meeting times in the form of a multi-shaded green calendar,
+                        where darker greens means more people are available, and lighter greens mean
+                        fewer.
+                    </p>
+                    <p>
+                        I thought it would be funny if I could make art on this website, similar to
+                        how people make <a href="https://github.com/gelstudios/gitfiti">art</a> on
+                        github contribution histories.
+                    </p>
 
-                </p>
+                    <p>
+                        Here's how it works: Given an image and a when2meet link, the program
+                        pixelizes the image, converts it to grayscale, determines the darkness of
+                        each pixel, and sends a corresponding number of bots one-by-one to the link
+                        to recreate the image. For the dark parts of the image, all or most bots are
+                        'available', and for the light parts, few are.
+                    </p>
 
-                <p>
-                    My original goal of minecraft creeper —a pretty basic pixel art image— turned out to be so easy that I moved on to more complicated images,  
-                    This project was definitely a fun one, and due to how much I learned about python, web scraping, and script writing, you can't say it was <i>entirely</i> stupid and useless.
-                
-                    
-                        
-                        <p><a href = "https://github.com/rybarczykj/when2meet-art">Here's</a>  the github link.
-                </p>
+                    <div class="imgContainer">
+                        <img src="blogimages/homer.png" alt="homer" />
+                    </div>
+
+                    <p>
+                        An interesting challenge was how pixel art translated to when2meet. One
+                        square box on the schedule represents 1 hour on 1 day, but you can actually
+                        specify down to <i>15-minute </i> increments. Essentially, I had 4 times the
+                        vertical resolution as horizontal. To prepare images accordingly, I just had
+                        to resize them to be 4 times as high as wide.
+                    </p>
+
+                    <p>
+                        My original goal of minecraft creeper —a pretty basic pixel art image—
+                        turned out to be so easy that I moved on to more complicated images, This
+                        project was definitely a fun one, and due to how much I learned about
+                        python, web scraping, and script writing, you can't say it was
+                        <i>entirely</i> stupid and useless.
+                    </p>
+
+                    <p>
+                        <a href="https://github.com/rybarczykj/when2meet-art">Here's</a> the github
+                        link.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

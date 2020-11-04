@@ -1,23 +1,21 @@
-
-
-@font-face{
+@font-face {
     src: url(../fonts/WorkSans-Medium.ttf);
     font-family: worksans;
     font-weight: 500;
 }
-@font-face{
+@font-face {
     src: url(../fonts/WorkSans-Regular.ttf);
     font-family: worksans;
     font-weight: 400;
 }
-@font-face{
+@font-face {
     src: url(../fonts/WorkSans-Light.ttf);
     font-family: worksans;
     font-weight: 100;
 }
-body { 
+body {
     padding: 0;
-    margin: 0;   
+    margin: 0;
     overscroll-behavior-y: none;
 }
 
@@ -27,10 +25,9 @@ body {
     --hover-color-normal: gray;
     --hover-color-nav: gray;
     --text-color: black;
-    --not-text-color: rgba(240, 240, 240); 
-    --background: linear-gradient( rgba(0, 0, 0, .02), rgba(0, 0, 0, .02) ), url('None');
-    --squiggly: url('../images/underline.gif') bottom repeat-x;
-
+    --not-text-color: rgba(240, 240, 240);
+    --background: linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02)), url("None");
+    --squiggly: url("../images/underline.gif") bottom repeat-x;
 }
 
 [data-theme="dark"] {
@@ -40,10 +37,11 @@ body {
     --hover-color-normal: lightgray;
     --hover-color-nav: white;
     --text-color: white;
-    --not-text-color: rgba(30,30,30); 
+    --not-text-color: rgba(30, 30, 30);
     /* --background: linear-gradient( rgba(0, 0, 0,0.05), rgba(0, 0, 0,0.05) ), url('../images/background_2.jpg'); */
-    --background: linear-gradient( rgba(0, 0, 0,0.8), rgba(0, 0, 0,0.8) ), url('../images/skate.jpeg');
-    --squiggly: url("none")
+    --background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url("../images/skate.jpeg");
+    --squiggly: url("none");
 }
 
 .theme-switch-wrapper {
@@ -59,20 +57,18 @@ body {
     right: 2px;
     font-size: 9pt;
     font-weight: 500;
-
-
-  }
-  .theme-switch {
+}
+.theme-switch {
     display: inline-block;
     height: 17px;
     position: relative;
     width: 30px;
-  }
-  
-  .theme-switch input {
-    display:none;
-  }
-  .slider {
+}
+
+.theme-switch input {
+    display: none;
+}
+.slider {
     background-color: var(--text-color);
     bottom: 0;
     cursor: pointer;
@@ -80,34 +76,33 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    transition: .3s;
-  }
-  
-  .slider:before {
+    transition: 0.3s;
+}
+
+.slider:before {
     background-color: var(--not-text-color);
     top: 2px;
     content: "";
     height: 13px;
     left: 2px;
     position: absolute;
-    transition: .3s;
+    transition: 0.3s;
     width: 13px;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked + .slider:before {
     transform: translateX(13px);
-  }
-  
-  .slider.round {
+}
+
+.slider.round {
     border-radius: 20px;
-  }
-  
-  .slider.round:before {
+}
+
+.slider.round:before {
     border-radius: 50%;
-  }
+}
 
-
-.wrapper{
+.wrapper {
     font-family: worksans, Arial;
     font-weight: 100;
     color: var(--text-color);
@@ -117,18 +112,14 @@ body {
     width: 100vw;
     min-height: 100vh;
 
-    display: flex; 
+    display: flex;
     flex-direction: row;
 
     align-items: center;
-
-
 }
 
-
-.centernav{
+.centernav {
     float: left;
-
 
     display: flex;
 
@@ -139,65 +130,62 @@ body {
     width: 30%;
     max-width: 600px;
     padding: 10px;
-    
-
-
 }
 
-
-.bigname { 
-    letter-spacing: .5px;
+.bigname {
+    letter-spacing: 0.5px;
     font-size: 20pt;
     margin-top: 10px;
-    margin-bottom: 3px; 
+    margin-bottom: 3px;
     font-weight: 500;
-    
 }
 .squiggly {
     background: var(--squiggly);
     display: inline;
 }
 
-.squiggly .dissappearingname{
+.squiggly .dissappearingname {
     display: inline;
 }
 
-.squiggly:hover{
+.squiggly:hover {
     background: None;
 }
 
-.squiggly:hover::after{
-    content: "Re·bar·chek"
+.squiggly:hover::after {
+    content: "Re·bar·chek";
 }
-.squiggly:hover .dissappearingname{
+.squiggly:hover .dissappearingname {
     display: none;
 }
 
-a { 
-    position: relative; }
+a {
+    position: relative;
+}
 
+a:link {
+    color: var(--text-color);
+}
+a:visited {
+    color: var(--text-color);
+}
+a:hover {
+    color: var(--hover-color-normal);
+}
 
-a:link{ color: var(--text-color); }
-a:visited { color: var(--text-color);  }
-a:hover {color: var(--hover-color-normal); }
-
-
-.breadcrumbs a{
+.breadcrumbs a {
     padding: 10px;
 }
 
-
-.links{
-    margin:5px;
+.links {
+    margin: 5px;
     margin-left: 10px;
     margin-right: 10px;
-
-
 }
 
-.links a{
+.links a {
     text-decoration: none;
-    font-family: 'Courier New';
+    font-family: "Courier New";
     padding-left: 11px;
     padding-right: 11px;
     padding-top: 4px;
@@ -205,57 +193,54 @@ a:hover {color: var(--hover-color-normal); }
     font-size: 8pt;
 }
 
-.links a:link{ color: var(--accent-color);}
-.links a:visited { color: var(--accent-color); }
-.links a:hover { color: var(--hover-color-nav); }
-.links a.now:after{
+.links a:link {
+    color: var(--accent-color);
+}
+.links a:visited {
+    color: var(--accent-color);
+}
+.links a:hover {
+    color: var(--hover-color-nav);
+}
+.links a.now:after {
     font-weight: 600;
     content: "^";
     position: absolute;
     right: 45%;
-    bottom: -70%; 
-
+    bottom: -70%;
 }
-.fa{
+.fa {
     text-decoration: none;
     font-size: 90%;
-
 }
 
-
-
-p{
-    letter-spacing: .4px;
+p {
+    letter-spacing: 0.4px;
     margin-bottom: 10px;
 }
 
-.intro{
+.intro {
     font-size: 11pt;
-    float:left;
+    float: left;
 }
 
-.content{
+.content {
+    width: 65%;
+    padding: 50px;
+    font-size: 9pt;
+    line-height: 1.5em;
+    border-left: 1px solid var(--bar-color);
+}
+.content-scroll {
     width: 65%;
     padding: 50px;
     font-size: 9pt;
     line-height: 1.5em;
     border-left: 1px solid var(--bar-color);
 
-
-}
-.content-scroll{
-    width: 65%;
-    padding: 50px;
-    font-size: 9pt;
-    line-height: 1.5em;
-    border-left: 1px solid var(--bar-color);
-
-
-
-/* DIFFERENT PART */
+    /* DIFFERENT PART */
     overflow-y: auto;
     max-height: 85vh;
-    
 }
 
 .text {
@@ -264,26 +249,24 @@ p{
     max-width: 600px;
 }
 
-p img{
+p img {
     max-width: 70%;
 }
 
-
-
-img{
+img {
     display: block;
     margin: 0 auto;
-    box-shadow: 0px 1px 7px  grey;
+    box-shadow: 0px 1px 7px grey;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
-li{
+li {
     margin: 10px 0;
 }
 .date {
-    font-family: 'Courier New';
+    font-family: "Courier New";
     display: inline;
 }
 /* .date:after{
@@ -291,97 +274,73 @@ li{
     display: inline;
 } */
 
-
-
-.grid-container{
+.grid-container {
     max-width: 800px;
     display: flex;
     flex-wrap: wrap;
     /* justify-content: center; */
-    
 }
 
-
-.grid-entry{
+.grid-entry {
     text-align: center;
     width: 300px;
     height: 185px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
-
 }
 
-.grid-entry-img-wrapper{
-    box-shadow: 0px 1px 7px  grey;
-
-
+.grid-entry-img-wrapper {
+    box-shadow: 0px 1px 7px grey;
 }
 
-.grid-entry-img-wrapper img{
+.grid-entry-img-wrapper img {
     padding: 0px;
     width: 100%;
     height: 140px;
     vertical-align: top;
     object-fit: cover;
-
 }
 
-.grid-entry:hover img {	
-    -webkit-filter: blur(2px);	
-    filter: blur(2px);	
+.grid-entry:hover img {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
 
-    -webkit-transition: .3s;	
-    transition: .3s;	
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
 
-.arrow{
+.arrow {
     display: inline;
     padding-left: 2pt;
     padding-right: 2pt;
 }
 
-
 /* MOBILE */
-@media only screen and (max-width:700px){
+@media only screen and (max-width: 700px) {
     .wrapper {
-        flex-direction: column; 
-
+        flex-direction: column;
     }
-    .centernav{
+    .centernav {
         width: 100%;
     }
-    .content{
+    .content {
         width: 80%;
         padding: 15px;
         border-left: none;
     }
-    .text{
+    .text {
         padding-left: 10px;
         padding-right: 10px;
     }
-    .content-scroll{
+    .content-scroll {
         width: 80%;
         padding-top: 15px;
 
         max-height: none;
         overflow-y: visible;
     }
-
-    
-
 }
 
-
-@media only screen and (min-width:700px) and (max-width:1200px){
-   
-
-    
-
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
 }
-
-
-
-
-
-
