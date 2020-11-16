@@ -132,7 +132,7 @@ input:checked + .slider:before {
     padding: 10px;
 }
 
-.bigname {
+.bigname h1 {
     letter-spacing: 0.5px;
     font-size: 20pt;
     margin-top: 10px;
