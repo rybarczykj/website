@@ -165,13 +165,14 @@ a:visited {
     position: relative;
     bottom: 30px;
     left: 20px;
-    width: 140px;
+    width: 120px;
     font-size: 6pt;
+    line-height: 1.5;
 }
 .shirts {
     padding: 20px;
 }
 .shirts img {
-    width: 150px;
+    width: 160px;
     height: 160px;
 }
