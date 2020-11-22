@@ -1,0 +1,177 @@
+.wrapper {
+    font-family: "Times New Roman", Times, serif;
+
+    align-items: center;
+    text-align: center;
+    font-size: 8pt;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)),
+        url("../images/cs318/background.png");
+    background-position-x: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    min-height: 300vh;
+}
+
+.cover {
+    width: 350px;
+
+    position: absolute;
+    left: 50%;
+
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.cover p {
+    padding-left: 5px;
+}
+
+.maintitle {
+    padding: 15px;
+
+    padding-top: 200px;
+    font-size: 13pt;
+}
+.img {
+    display: block;
+    margin: 0 auto;
+}
+
+.twopages {
+    padding: 25px;
+    text-align: center;
+    position: relative;
+}
+.page {
+    width: 380px;
+    height: 587px;
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative; /* allows kids to be absolute*/
+    background-attachment: fixed;
+    /* border-bottom: 1pt solid black; */
+
+    text-align: left;
+    border-style: double;
+    background-color: white;
+    box-shadow: 0px 1px 7px black;
+}
+
+.pagenum {
+    position: absolute;
+    left: 190px;
+    bottom: 20px;
+}
+
+.pagecontent {
+    height: inherit;
+    position: relative;
+    /* border: 1pt solid red; */
+    display: block;
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 600;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.centerofpage {
+    padding-top: 90px;
+    padding-left: 80px;
+}
+
+.poem {
+    width: 200px;
+    line-height: 1.5;
+    font-size: 7pt;
+}
+
+.story {
+    width: 200px;
+    padding: 50px;
+    font-size: 7pt;
+    height: 400px;
+}
+
+.desc {
+    /* margin-left: 50px; */
+    width: 200px;
+    margin-bottom: 30px;
+    line-height: 2;
+    /* width: inherit; */
+    font-size: 6pt;
+}
+
+.annotationleft {
+    right: 420px;
+    top: 200px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    position: absolute;
+    width: 150px;
+    padding: 10px;
+    /* border: 2pt solid red; */
+    opacity: 100%;
+    font-size: 6pt;
+    background-color: white;
+    border: 2pt solid white;
+    box-shadow: 0px 1px 7px black;
+}
+
+.annotationright {
+    left: 420px;
+    top: 200px;
+    /* top: 300px; */
+
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    position: absolute;
+    width: 150px;
+    padding: 10px;
+    /* border: 2pt solid red; */
+    opacity: 100%;
+    font-size: 6pt;
+    background-color: white;
+    border: 2pt solid white;
+    box-shadow: 0px 1px 7px black;
+}
+/* .page:not(.annotationright):hover {
+    border-color: red;
+} */
+
+/* .page:hover .annotationright,
+.page:hover .annotationleft {
+    border: 2pt solid red;
+    opacity: 100%;
+} */
+
+a {
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+}
+
+.shirtdesc {
+    display: inline-block;
+    padding: 20px;
+    /* font-style: italic; */
+    position: relative;
+    bottom: 30px;
+    left: 20px;
+    width: 140px;
+    font-size: 6pt;
+}
+.shirts {
+    padding: 20px;
+}
+.shirts img {
+    width: 150px;
+    height: 160px;
+}
