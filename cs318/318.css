@@ -54,9 +54,11 @@
     /* border-bottom: 1pt solid black; */
 
     text-align: left;
-    border-style: double;
+    border: 0.5pt solid black;
+    border-style: solid;
+    /* border-style: double; */
     background-color: white;
-    box-shadow: 0px 1px 7px black;
+    /* box-shadow: 0px 1px 7px black; */
 }
 
 .pagenum {
@@ -68,7 +70,6 @@
 .pagecontent {
     height: inherit;
     position: relative;
-    /* border: 1pt solid red; */
     display: block;
     margin: 0 auto;
 }
@@ -91,10 +92,10 @@
 }
 
 .story {
-    width: 200px;
+    width: 250px;
     padding: 50px;
     font-size: 7pt;
-    height: 400px;
+    /* height: 300px; */
 }
 
 .desc {
