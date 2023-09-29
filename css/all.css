@@ -20,17 +20,6 @@ body {
 }
 
 :root {
-    --accent-color: black;
-    --bar-color: black;
-    --hover-color-normal: gray;
-    --hover-color-nav: gray;
-    --text-color: black;
-    --not-text-color: rgba(240, 240, 240);
-    --background: linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02)), url("None");
-    --squiggly: url("../images/underline.gif") bottom repeat-x;
-}
-
-[data-theme="dark"] {
     --accent-color: white;
     --bar-color: lime;
     /* --bar-color: rgb(204, 255, 0); */
@@ -42,6 +31,17 @@ body {
     --background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url("../images/skate.jpeg");
     --squiggly: url("none");
+}
+
+[data-theme="light"] {
+    --accent-color: black;
+    --bar-color: black;
+    --hover-color-normal: gray;
+    --hover-color-nav: gray;
+    --text-color: black;
+    --not-text-color: rgba(240, 240, 240);
+    --background: linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02)), url("None");
+    --squiggly: url("../images/underline.gif") bottom repeat-x;
 }
 
 .theme-switch-wrapper {
